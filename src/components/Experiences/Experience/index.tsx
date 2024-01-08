@@ -1,7 +1,6 @@
 import { FC } from 'react'
 import { Projects } from './Projects'
 import { Experience as E } from '@/types'
-import { CompanyName } from '@/typography'
 import { Company } from './Company'
 
 interface Props extends E {}

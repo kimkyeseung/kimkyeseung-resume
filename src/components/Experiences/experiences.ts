@@ -13,7 +13,23 @@ export const experiences: Experience[] = [
     ],
     joinedAt: '2022/09/20',
     seperatedAt: '2023/12/31',
-    description: '기업과 강사를 연결하는 B2B 워크샵 플랫폼.',
+    descriptions: [
+      { title: '기업과 강사를 연결하는 B2B 워크샵 플랫폼' },
+      {
+        title: '제품팀 구성',
+        details: ['팀 리더 1', '기획자 1', '프론트엔드 개발자 1', '디자이너 1'],
+      },
+      {
+        title: '업무 및 문화',
+        details: [
+          '코드 리뷰를 통한 코드 품질 및 컨벤션 관리',
+          '작업계획 작성 및 리뷰 문화를 통한 개발 문화',
+          '기술 부채 관리',
+          '데일리 스크럼',
+          '스프린트 방식',
+        ],
+      },
+    ],
     url: 'https://www.weebur.com/',
     projects: [
       {
@@ -29,7 +45,7 @@ export const experiences: Experience[] = [
   },
   {
     name: '아토머스',
-    description: '심리상담 & 마음치유 플랫폼',
+    descriptions: [{ title: '심리상담 & 마음치유 플랫폼' }],
     url: 'https://www.mindcafe.co.kr/',
     techs: ['vue / vuex', 'python3 / flask', 'react / nextjs', 'docker'],
     joinedAt: '2021/1/4',
@@ -88,7 +104,7 @@ export const experiences: Experience[] = [
   },
   {
     name: '부크크',
-    description: 'POD 기반 자가출판 플랫폼',
+    descriptions: [{ title: 'POD 기반 자가출판 플랫폼' }],
     joinedAt: '2019/6/10',
     seperatedAt: '2020/9/1',
     techs: ['react / redux', 'nodejs / express', 'mongodb / mongoose'],

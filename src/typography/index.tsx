@@ -37,10 +37,13 @@ export const SectionTitle = ({ className, ...props }: any) => (
 export const Url = ({ className, ...props }: any) => (
   <span
     {...props}
-    className={classNames([
-      'text-sm',
-      'text-blue-400',
-      className,
-    ])}
+    className={classNames(['text-sm', 'text-blue-400', className])}
+  />
+)
+
+export const Caption = ({ className, ...props }: any) => (
+  <span
+    {...props}
+    className={classNames(['text-sm', 'text-gray-500', className])}
   />
 )
