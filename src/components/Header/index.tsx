@@ -1,8 +1,8 @@
-import { Subtitle, Title } from "@/typography"
+import { Subtitle, Title } from '@/typography'
 
 export const Header = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 print:gap-2">
       <Title>Kim Kyeseung</Title>
       <Subtitle>Frontend Developer</Subtitle>
     </div>

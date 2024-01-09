@@ -1,34 +1,40 @@
 import { Inter } from 'next/font/google'
-import {
-  Summary,
-  Header,
-  Section,
-  Experiences,
-  Info,
-  Educations,
-} from '@/components'
+import { Aside, Contents } from '@/components'
+import { useReactToPrint } from 'react-to-print'
+import { useCallback, useRef } from 'react'
+import { DOCUMENT_TITLE } from '@/constants'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const ref = useRef<HTMLDivElement>(null)
+
+  const handleAfterPrint = useCallback(() => {
+    console.log('`onAfterPrint` called') // tslint:disable-line no-console
+  }, [])
+
+  const handleBeforePrint = useCallback(() => {
+    console.log('`onBeforePrint` called') // tslint:disable-line no-console
+  }, [])
+
+  const reactToPrintContent = useCallback(() => {
+    return ref.current
+  }, [ref.current])
+
+  const handlePrint = useReactToPrint({
+    content: reactToPrintContent,
+    documentTitle: DOCUMENT_TITLE,
+    onBeforePrint: handleBeforePrint,
+    onAfterPrint: handleAfterPrint,
+    removeAfterPrint: true,
+  })
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-0 md:p-24 ${inter.className} bg-gray-100 w-screen`}
     >
-      <div className="bg-white shadow container p-4 md:p-32 flex flex-col gap-12">
-        <Header />
-        <Info />
-        <Section title="Principal Summary">
-          <Summary />
-        </Section>
-
-        <Section title="Experience">
-          <Experiences />
-        </Section>
-
-        <Section title="Education">
-          <Educations />
-        </Section>
+      <Contents ref={ref} />
+      <div className="hidden md:block fixed right-6 top-6">
+        <Aside onPrintButtonClick={handlePrint} />
       </div>
     </main>
   )

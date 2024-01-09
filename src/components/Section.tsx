@@ -9,7 +9,7 @@ export const Section: FC<Props> = ({ title, children }) => {
       {title && (
         <SectionTitle className="text-xl font-bold">{title}</SectionTitle>
       )}
-      <hr className="my-4 border-t border-gray-300" />
+      <hr className="mt-1 mb-5 print:mt-0 print:mb-3 border-t border-blue-200" />
       {children}
     </div>
   )

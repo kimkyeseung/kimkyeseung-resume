@@ -36,7 +36,7 @@ export const Info = () => {
       </div>
       <div className="flex gap-2">
         <AcademicCapIcon className={`h-6 w-6 ${iconColor}`} />
-        부경대학교 시각디자인 전공
+        국립 부경대학교 시각디자인 전공
       </div>
     </div>
   )
