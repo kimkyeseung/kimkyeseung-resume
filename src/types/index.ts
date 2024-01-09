@@ -18,3 +18,17 @@ export interface Project {
   details: string[]
   description?: string
 }
+
+export interface Curriculum {
+  title: string
+  description: string
+}
+
+export interface Education {
+  name: string
+  descriptions: DescriptionForExperience[]
+  joinedAt: string | Date
+  seperatedAt: string | Date
+  url?: string
+  curriculums: Curriculum[]
+}

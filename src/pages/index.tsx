@@ -1,5 +1,12 @@
 import { Inter } from 'next/font/google'
-import { Summary, Header, Section, Experiences, Info } from '@/components'
+import {
+  Summary,
+  Header,
+  Section,
+  Experiences,
+  Info,
+  Educations,
+} from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +24,10 @@ export default function Home() {
 
         <Section title="Experience">
           <Experiences />
+        </Section>
+
+        <Section title="Education">
+          <Educations />
         </Section>
       </div>
     </main>
