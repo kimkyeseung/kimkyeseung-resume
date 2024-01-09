@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "homepage": "https://kimkyeseung.github.io/kimkyeseung-resume/",
   "dependencies": {
     "@heroicons/react": "^2.1.1",
     "classnames": "^2.5.1",
