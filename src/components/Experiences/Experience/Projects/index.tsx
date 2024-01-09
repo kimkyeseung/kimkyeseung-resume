@@ -1,5 +1,5 @@
 import { Project } from '@/types'
-import { ProjectTitle } from '@/typography'
+import { Caption, ProjectTitle } from '@/typography'
 import { FC } from 'react'
 
 interface Props {
@@ -11,14 +11,17 @@ export const Projects: FC<Props> = ({ items }) => {
     <div className="flex flex-col gap-4">
       {items.map((p, index) => (
         <div key={index}>
-          <ProjectTitle>{p.title}</ProjectTitle>
-          <div className="mt-1">
+          <ProjectTitle className="flex items-baseline gap-2">
+            {p.title}
+            {p.description && <Caption>{p.description}</Caption>}
+          </ProjectTitle>
+          <ul className="mt-1">
             {p.details.map((d, index) => (
-              <div key={index} className="text-gray-700">
+              <li key={index} className="text-gray-700">
                 {d}
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       ))}
     </div>

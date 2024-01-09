@@ -1,10 +1,7 @@
 import { SectionTitle } from '@/typography'
-import { FC, ReactElement } from 'react'
+import { FC, PropsWithChildren } from 'react'
 
-interface Props {
-  title?: string
-  children: ReactElement
-}
+type Props = { title?: string } & PropsWithChildren
 
 export const Section: FC<Props> = ({ title, children }) => {
   return (
