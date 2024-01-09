@@ -44,6 +44,11 @@ export const Url = ({ className, ...props }: any) => (
 export const Caption = ({ className, ...props }: any) => (
   <span
     {...props}
-    className={classNames(['text-sm', 'text-gray-500', className])}
+    className={classNames([
+      'text-sm',
+      'text-gray-500',
+      'font-normal',
+      className,
+    ])}
   />
 )
