@@ -13,9 +13,9 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className} bg-gray-100`}
+      className={`flex min-h-screen flex-col items-center justify-between p-0 md:p-24 ${inter.className} bg-gray-100 w-screen`}
     >
-      <div className="bg-white shadow container p-32 flex flex-col gap-12">
+      <div className="bg-white shadow container p-4 md:p-32 flex flex-col gap-12">
         <Header />
         <Info />
         <Section title="Principal Summary">
