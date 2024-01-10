@@ -17,12 +17,8 @@ export default function Home() {
     console.log('`onBeforePrint` called') // tslint:disable-line no-console
   }, [])
 
-  const reactToPrintContent = useCallback(() => {
-    return ref.current
-  }, [ref.current])
-
   const handlePrint = useReactToPrint({
-    content: reactToPrintContent,
+    content: () => ref.current,
     documentTitle: DOCUMENT_TITLE,
     onBeforePrint: handleBeforePrint,
     onAfterPrint: handleAfterPrint,

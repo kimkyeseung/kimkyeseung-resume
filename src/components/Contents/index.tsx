@@ -1,7 +1,8 @@
 import { forwardRef } from 'react'
 import { Header, Info, Section, Summary, Experiences, Educations } from '..'
 
-export const Contents = forwardRef<HTMLDivElement>((props, ref) => {
+// eslint-disable-next-line react/display-name
+export const Contents = forwardRef<HTMLDivElement>((_props, ref) => {
   return (
     <div className="bg-white shadow">
       <div
