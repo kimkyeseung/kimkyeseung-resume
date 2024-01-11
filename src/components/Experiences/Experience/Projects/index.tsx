@@ -11,7 +11,7 @@ export const Projects: FC<Props> = ({ items }) => {
     <div className="flex flex-col gap-4">
       {items.map((p, index) => (
         <div key={index}>
-          <ProjectTitle className="flex items-baseline gap-2">
+          <ProjectTitle className="flex items-baseline flex-wrap gap-2">
             {p.title}
             {p.description && <Caption>{p.description}</Caption>}
           </ProjectTitle>
