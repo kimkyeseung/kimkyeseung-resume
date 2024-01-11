@@ -1,10 +1,8 @@
-import { Subtitle, Title } from '@/typography'
-
 export const Header = () => {
   return (
-    <div className="flex flex-col gap-4 print:gap-2">
-      <Title>Kim Kyeseung</Title>
-      <Subtitle>Frontend Developer</Subtitle>
+    <div className="flex flex-col gap-4">
+      <h1 className="text-title">Kim Kyeseung</h1>
+      <h2 className="text-subtitle">Frontend Developer</h2>
     </div>
   )
 }

@@ -27,3 +27,13 @@ ul li::before {
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+@media print {
+  html {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .print-area {
+    transform: scale(0.6);
+  }
+}
