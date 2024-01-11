@@ -15,7 +15,9 @@ const config: Config = {
       '2xl': '1.563rem',
       '3xl': '1.953rem',
       title: ['2.441rem', { fontWeight: 600 }],
+      'title-mobile': ['2rem', { fontWeight: 600 }],
       subtitle: '1.953rem',
+      'subtitle-mobile': '1.6rem',
       'section-title': ['1.1rem', { fontWeight: 700 }],
     },
     extend: {
