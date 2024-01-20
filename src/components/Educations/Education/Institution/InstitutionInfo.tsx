@@ -14,9 +14,9 @@ export const InstitutionInfo: FC<Props> = ({
   url,
 }) => (
   <div>
-    <div className="flex gap-2 items-center">
+    <div className="flex gap-2 items-center flex-wrap">
       <CompanyName>{name}</CompanyName>
-      <Caption>
+      <Caption className="whitespace-pre">
         {dayjs(joinedAt).format(DISPLAY_DATE_FORAMT)} ~
         {dayjs(seperatedAt).format(DISPLAY_DATE_FORAMT)}
       </Caption>

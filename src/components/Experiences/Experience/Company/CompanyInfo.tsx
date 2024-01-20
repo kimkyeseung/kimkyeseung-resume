@@ -16,7 +16,7 @@ export const CompanyInfo: FC<Props> = ({
   <div>
     <div className="flex gap-2 items-center">
       <CompanyName>{name}</CompanyName>
-      <Caption>
+      <Caption className="whitespace-pre">
         {dayjs(joinedAt).format(DISPLAY_DATE_FORAMT)} ~
         {dayjs(seperatedAt).format(DISPLAY_DATE_FORAMT)}
       </Caption>
