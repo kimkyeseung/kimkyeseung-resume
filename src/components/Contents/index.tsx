@@ -18,12 +18,15 @@ export const Contents = forwardRef<HTMLDivElement>((_props, ref) => {
         className="container p-4 md:p-24 flex flex-col gap-8 md:gap-12"
       >
         <Header />
+
         <Info />
-        <Section title="Skills">
-          <Skills />
-        </Section>
+
         <Section title="Principal Summary">
           <Summary />
+        </Section>
+
+        <Section title="Skills">
+          <Skills />
         </Section>
 
         <Section title="Experience">
