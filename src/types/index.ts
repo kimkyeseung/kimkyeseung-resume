@@ -1,3 +1,6 @@
+import { IconType } from '@icons-pack/react-simple-icons'
+import { ReactElement } from 'react'
+
 export interface Experience {
   name: string
   descriptions: DescriptionForExperience[]
@@ -31,4 +34,11 @@ export interface Education {
   seperatedAt: string | Date
   url?: string
   curriculums: Curriculum[]
+}
+
+export interface Skill {
+  name: string
+  Icon: ReactElement<IconType>
+  description?: string
+  url?: string
 }
