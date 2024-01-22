@@ -17,7 +17,7 @@ import {
   SiMysql,
   SiDocker,
   SiGithubactions,
-  SiStoryblok,
+  SiStorybook,
   SiSocketdotio,
   SiWebrtc,
 } from '@icons-pack/react-simple-icons'
@@ -67,7 +67,7 @@ const frontEnds: Skill[] = [
   },
   {
     name: 'Storybook',
-    Icon: <SiStoryblok color="default" className="simple-icon" />,
+    Icon: <SiStorybook color="default" className="simple-icon" />,
     description:
       'Storybook은 React, Vue, Angular 등의 프론트엔드 프레임워크를 위한 UI 컴포넌트 개발 및 문서화 도구로, 컴포넌트를 시각적으로 테스트하고 문서화하여 개발자들이 쉽게 사용할 수 있도록 돕습니다.',
   },
