@@ -53,4 +53,13 @@ ul li::before {
   .print-area {
     transform: scale(0.6);
   }
+  .simple-icon {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+@page {
+  size: A4 portrait;
+  margin: 1.5cm 2cm;
 }

@@ -15,7 +15,7 @@ export const Contents = forwardRef<HTMLDivElement>((_props, ref) => {
     <div className="bg-white shadow w-full md:w-[350mm] print-area">
       <div
         ref={ref}
-        className="container p-4 md:p-24 flex flex-col gap-8 md:gap-12"
+        className="container p-4 md:p-24 print:p-0 flex flex-col gap-8 md:gap-12"
       >
         <Header />
 

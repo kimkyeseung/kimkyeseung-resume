@@ -10,7 +10,7 @@ export const Projects: FC<Props> = ({ items }) => {
   return (
     <div className="flex flex-col gap-4">
       {items.map((p, index) => (
-        <div key={index}>
+        <div key={index} className="break-inside-avoid-page">
           <ProjectTitle className="flex items-baseline flex-wrap gap-2">
             {p.title}
             {p.description && <Caption>{p.description}</Caption>}

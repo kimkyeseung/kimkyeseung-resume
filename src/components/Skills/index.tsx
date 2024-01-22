@@ -12,7 +12,7 @@ export const Skills = () => {
       ].map(({ title, items }, index) => (
         <div key={index}>
           <div className="text-base font-bold text-gray-700">{title}</div>
-          <div className="flex flex-wrap md:flex-nowrap gap-2 md:gap-5 mt-3">
+          <div className="flex flex-wrap md:flex-nowrap gap-2 md:gap-5 print:gap-5 mt-3">
             {items.map((s, index) => (
               <Skill key={index} item={s} />
             ))}

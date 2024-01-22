@@ -8,7 +8,7 @@ interface Props {
 
 export const Skill: FC<Props> = ({ item }) => {
   return (
-    <div className="flex flex-col items-center w-16 md:w-28">
+    <div className="flex flex-col items-center w-16 md:w-28 print:w-20">
       {item.Icon}
       <Caption className="mt-2 text-center whitespace-pre-wrap md:whitespace-pre">
         {item.name}
