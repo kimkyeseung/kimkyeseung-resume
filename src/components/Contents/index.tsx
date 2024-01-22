@@ -1,5 +1,13 @@
 import { forwardRef } from 'react'
-import { Header, Info, Section, Summary, Experiences, Educations } from '..'
+import {
+  Header,
+  Info,
+  Section,
+  Summary,
+  Experiences,
+  Educations,
+  Skills,
+} from '..'
 
 // eslint-disable-next-line react/display-name
 export const Contents = forwardRef<HTMLDivElement>((_props, ref) => {
@@ -11,6 +19,9 @@ export const Contents = forwardRef<HTMLDivElement>((_props, ref) => {
       >
         <Header />
         <Info />
+        <Section title="Skills">
+          <Skills />
+        </Section>
         <Section title="Principal Summary">
           <Summary />
         </Section>

@@ -20,6 +20,23 @@ ul li::before {
   margin-left: -1em;
 }
 
+.simple-icon {
+  width: 30px;
+  height: 30px;
+}
+@screen sm {
+  .simple-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@screen md {
+  .simple-icon {
+    width: 55px;
+    height: 55px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
