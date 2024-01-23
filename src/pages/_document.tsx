@@ -3,6 +3,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html lang="ko">
+      <title>프론트엔드 개발자 김계승</title>
       <Head>
         <meta
           property="og:image"
