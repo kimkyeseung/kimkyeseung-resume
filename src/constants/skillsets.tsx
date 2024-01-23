@@ -20,6 +20,7 @@ import {
   SiStorybook,
   SiSocketdotio,
   SiWebrtc,
+  SiNx,
 } from '@icons-pack/react-simple-icons'
 
 const frontEnds: Skill[] = [
@@ -54,18 +55,6 @@ const frontEnds: Skill[] = [
       'JavaScript는 웹 페이지를 동적으로 만들기 위해 사용되는 프로그래밍 언어로, 클라이언트 측 웹 개발에서 가장 널리 사용되며, 최근에는 서버 측 개발에서도 사용되고 있습니다.',
   },
   {
-    name: 'Styled Components',
-    Icon: <SiStyledcomponents color="default" className="simple-icon" />,
-    description:
-      'Styled Components는 React 애플리케이션에서 CSS를 작성하는 데 사용되는 라이브러리로, JavaScript 파일 안에 CSS를 작성하여 컴포넌트 스타일을 관리할 수 있게 해줍니다.',
-  },
-  {
-    name: 'Tailwind CSS',
-    Icon: <SiTailwindcss color="default" className="simple-icon" />,
-    description:
-      'Tailwind CSS는 클래스 기반의 CSS 프레임워크로, HTML 클래스에 직접 스타일을 적용하여 웹 페이지를 디자인하는데 사용되며, 커스터마이징이 용이하고 반응형 웹 디자인에 적합합니다.',
-  },
-  {
     name: 'Storybook',
     Icon: <SiStorybook color="default" className="simple-icon" />,
     description:
@@ -76,6 +65,18 @@ const frontEnds: Skill[] = [
     Icon: <SiJest color="default" className="simple-icon" />,
     description:
       'Jest는 페이스북에서 개발된 자바스크립트 테스팅 프레임워크로, 간편한 구성과 빠른 실행 속도를 제공하여 효율적인 테스트 작성을 가능케 합니다.',
+  },
+  {
+    name: 'Styled Components',
+    Icon: <SiStyledcomponents color="default" className="simple-icon" />,
+    description:
+      'Styled Components는 React 애플리케이션에서 CSS를 작성하는 데 사용되는 라이브러리로, JavaScript 파일 안에 CSS를 작성하여 컴포넌트 스타일을 관리할 수 있게 해줍니다.',
+  },
+  {
+    name: 'Tailwind CSS',
+    Icon: <SiTailwindcss color="default" className="simple-icon" />,
+    description:
+      'Tailwind CSS는 클래스 기반의 CSS 프레임워크로, HTML 클래스에 직접 스타일을 적용하여 웹 페이지를 디자인하는데 사용되며, 커스터마이징이 용이하고 반응형 웹 디자인에 적합합니다.',
   },
 ]
 
@@ -148,6 +149,12 @@ const devOps = [
     Icon: <SiWebrtc color="default" className="simple-icon" />,
     description:
       'WebRTC는 브라우저 간에 플러그인 없이 실시간 음성, 영상 통신 및 데이터 공유를 가능케 하는 오픈 소스 프로젝트이며, 웹 및 모바일 애플리케이션에서 활용됩니다.',
+  },
+  {
+    name: 'Nx',
+    Icon: <SiNx color="default" className="simple-icon" />,
+    description:
+      'Nx는 monorepo에서 다수의 프로젝트를 관리하고 통합하여 공통된 코드베이스를 유지보수하는 데 도움이 되는 오픈 소스 도구입니다.',
   },
 ]
 
