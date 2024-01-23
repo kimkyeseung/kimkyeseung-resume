@@ -1,15 +1,14 @@
 import { FC } from 'react'
 import { Education as E } from '@/types'
 import { Institution } from './Institution'
-import { TwoColumnRow } from '@/components'
-import { Curriculums } from './Curriculums'
+import { TwoColumnRow, Details } from '@/components'
 
 interface Props extends E {}
 
 export const Education: FC<Props> = ({ curriculums, ...institutionProps }) => {
   return (
     <TwoColumnRow leftSide={<Institution {...institutionProps} />}>
-      <Curriculums items={curriculums} />
+      <Details items={curriculums} />
     </TwoColumnRow>
   )
 }

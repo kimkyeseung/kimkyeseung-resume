@@ -8,7 +8,7 @@ export interface Experience {
   joinedAt: string | Date
   seperatedAt: string | Date
   url?: string
-  projects: Project[]
+  projects: Detail[]
 }
 
 export interface DescriptionForExperience {
@@ -16,15 +16,10 @@ export interface DescriptionForExperience {
   details?: string[]
 }
 
-export interface Project {
+export interface Detail {
   title: string
-  details: string[]
-  description?: string
-}
-
-export interface Curriculum {
-  title: string
-  description: string
+  descriptions: string[]
+  information?: string
 }
 
 export interface Education {
@@ -33,7 +28,7 @@ export interface Education {
   joinedAt: string | Date
   seperatedAt: string | Date
   url?: string
-  curriculums: Curriculum[]
+  curriculums: Detail[]
 }
 
 export interface Skill {
