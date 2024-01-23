@@ -16,6 +16,7 @@ export default function Document() {
           content="https://kimkyeseung.github.io/kimkyeseung-resume/"
         />
         <meta property="og:description" content="문제를 해결하는 사람" />
+        <meta property="og:title" content="프론트엔드 개발자 김계승" />
         <meta property="og:site_name" content="프론트엔드 개발자 김계승" />
         <meta property="og:type" content="website" />
       </Head>
