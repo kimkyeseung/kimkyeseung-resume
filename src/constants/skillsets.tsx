@@ -21,6 +21,7 @@ import {
   SiSocketdotio,
   SiWebrtc,
   SiNx,
+  SiNginx,
 } from '@icons-pack/react-simple-icons'
 
 const frontEnds: Skill[] = [
@@ -104,6 +105,12 @@ const backEnds = [
     Icon: <SiFlask color="default" className="simple-icon" />,
     description:
       'Flask는 Python으로 웹 애플리케이션을 개발하기 위한 마이크로 웹 프레임워크로, 가볍고 확장성이 높아 간단한 API부터 복잡한 웹 애플리케이션까지 다양한 형태의 웹 서비스를 구축할 수 있습니다.',
+  },
+  {
+    name: 'Nginx',
+    Icon: <SiNginx color="default" className="simple-icon" />,
+    description:
+      'Nginx는 웹 서버로, 높은 성능과 안정성을 제공하며 reverse proxy, load balancer, HTTP cache 등의 기능을 갖추고 있어 웹 서비스의 성능을 향상시키는 데 사용됩니다.',
   },
   {
     name: 'MongoDB',
