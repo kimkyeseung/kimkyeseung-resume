@@ -14,7 +14,7 @@ export const ProjectTitle = ({ className, ...props }: any) => (
 export const Url = ({ className, ...props }: any) => (
   <span
     {...props}
-    className={classNames(['text-sm', 'text-blue-400', className])}
+    className={classNames(['text-sm', 'text-indigo-400', className])}
   />
 )
 

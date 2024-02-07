@@ -7,7 +7,7 @@ import {
   AcademicCapIcon,
 } from '@heroicons/react/24/solid'
 
-const iconColor = 'text-blue-600'
+const iconColor = 'text-indigo-400'
 
 export const Info = () => {
   return (

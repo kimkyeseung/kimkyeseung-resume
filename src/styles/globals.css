@@ -14,7 +14,7 @@ ul {
 
 ul li::before {
   content: '\2022';
-  color: rgb(59 130 246);
+  color: theme('colors.indigo.700');
   font-weight: bold;
   display: inline-block;
   width: 1em;
