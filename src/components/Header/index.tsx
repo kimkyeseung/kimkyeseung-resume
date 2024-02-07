@@ -1,22 +1,23 @@
-import {
-  SUB_TITLE,
-  TITLE,
-  TRANSLATED_SUB_TITLE,
-  TRANSLATED_TITLE,
-} from '@/constants'
+import { Info, Title } from '..'
+import Image from 'next/image'
+import { DOCUMENT_DESCRIPTION, PROFILE_IMAGE_URL } from '@/constants'
 
 export const Header = () => {
   return (
-    <div className="flex flex-col gap-1 md:gap-2 print:gap-2">
-      <h1 className="text-title-mobile md:text-title" title={TRANSLATED_TITLE}>
-        {TITLE}
-      </h1>
-      <h2
-        className="text-subtitle-mobile md:text-subtitle w-auto md:w-3/4 print:w-3/4"
-        title={TRANSLATED_SUB_TITLE}
-      >
-        {SUB_TITLE}
-      </h2>
+    <div className="flex gap-4">
+      <div className="flex flex-col gap-8 md:gap-12">
+        <Title />
+        <Info />
+      </div>
+      <div className="rounded-full overflow-hidden h-fit print:scale-50 origin-top-right">
+        <Image
+          src={PROFILE_IMAGE_URL}
+          alt={DOCUMENT_DESCRIPTION}
+          title={DOCUMENT_DESCRIPTION}
+          width={200}
+          height={200}
+        />
+      </div>
     </div>
   )
 }
