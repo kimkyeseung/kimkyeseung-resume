@@ -1,9 +1,10 @@
+import { DOCUMENT_DESCRIPTION, DOCUMENT_TITLE } from '@/constants'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
     <Html lang="ko">
-      <title>프론트엔드 개발자 김계승</title>
+      <title>{DOCUMENT_TITLE}</title>
       <Head>
         <meta
           property="og:image"
@@ -15,9 +16,9 @@ export default function Document() {
           property="og:url"
           content="https://kimkyeseung.github.io/kimkyeseung-resume/"
         />
-        <meta property="og:description" content="문제를 해결하는 사람" />
-        <meta property="og:title" content="프론트엔드 개발자 김계승" />
-        <meta property="og:site_name" content="프론트엔드 개발자 김계승" />
+        <meta property="og:description" content={DOCUMENT_DESCRIPTION} />
+        <meta property="og:title" content={DOCUMENT_TITLE} />
+        <meta property="og:site_name" content={DOCUMENT_TITLE} />
         <meta property="og:type" content="website" />
       </Head>
       <body>

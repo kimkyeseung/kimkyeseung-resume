@@ -1,4 +1,5 @@
 export const DOCUMENT_TITLE = '웹 풀스택 개발자 김계승 이력서'
+export const DOCUMENT_DESCRIPTION = '문제를 해결하는 사람'
 export const TITLE = 'Kim Kyeseung'
 export const TRANSLATED_TITLE = '김계승'
 export const SUB_TITLE =
