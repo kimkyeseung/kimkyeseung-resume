@@ -1,4 +1,8 @@
-import { DOCUMENT_DESCRIPTION, DOCUMENT_TITLE } from '@/constants'
+import {
+  DOCUMENT_DESCRIPTION,
+  DOCUMENT_TITLE,
+  PROFILE_IMAGE_URL,
+} from '@/constants'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
@@ -6,10 +10,7 @@ export default function Document() {
     <Html lang="ko">
       <title>{DOCUMENT_TITLE}</title>
       <Head>
-        <meta
-          property="og:image"
-          content="https://media.licdn.com/dms/image/D5603AQGzdiOuanwX2w/profile-displayphoto-shrink_200_200/0/1705914280908?e=1711584000&v=beta&t=p9P-qf-vetRLKa19PMq4pKBxt9eyicMWLRpmsLaVuzo"
-        />
+        <meta property="og:image" content={PROFILE_IMAGE_URL} />
         <meta property="og:image:width" content="200" />
         <meta property="og:image:height" content="200" />
         <meta
