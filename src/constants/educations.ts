@@ -26,9 +26,9 @@ export const EDUCATIONS: Education[] = [
       {
         title: 'Javascript 프레임워크와 기본 백엔드 개발',
         descriptions: [
-          'React를 이용하여 실제로 작동하는 웹 어플리케이션을 제작',
-          'Redux와 React-Router를 이용한 flux 패턴방식의 상태 관리 및 라우트 관리',
-          'Node.js와 Express, MongoDB를 이용한 백엔드 개발의 기초와 작동 방식을 이해',
+          '`react`를 이용하여 실제로 작동하는 웹 어플리케이션을 제작',
+          '`redux`와 `react-router`를 이용한 flux 패턴방식의 상태 관리 및 라우트 관리',
+          '`node.js`와 `express`, `mongoDB`를 이용한 백엔드 개발의 기초와 작동 방식을 이해',
         ],
       },
     ],
@@ -43,7 +43,7 @@ export const EDUCATIONS: Education[] = [
         title: '웹 디자인 기초 및 포토샵, HTML / CSS 기본',
         descriptions: [
           '포토샵 기본 스킬 및 와이어프레임 제작 방법',
-          'XHTML 과 HTML5의 시맨틱 마크업 및 멀티미디어 컨텐츠 구현',
+          '`XHTML`과 `HTML5`의 시맨틱 마크업 및 멀티미디어 컨텐츠 구현',
           '미디어 쿼리를 통한 반응형 디자인 설계 등을 학습',
         ],
       },

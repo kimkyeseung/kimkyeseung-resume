@@ -1,5 +1,6 @@
 import { Detail } from '@/types'
 import { Caption, ProjectTitle } from '@/typography'
+import { changeBacktickToCode } from '@/utils'
 import { FC } from 'react'
 
 interface Props {
@@ -17,9 +18,11 @@ export const Details: FC<Props> = ({ items }) => {
           </ProjectTitle>
           <ul className="mt-1">
             {p.descriptions.map((d, index) => (
-              <li key={index} className="text-gray-700">
-                {d}
-              </li>
+              <li
+                key={index}
+                className="text-gray-700"
+                dangerouslySetInnerHTML={{ __html: changeBacktickToCode(d) }}
+              />
             ))}
           </ul>
         </div>

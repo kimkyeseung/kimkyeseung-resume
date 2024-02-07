@@ -36,8 +36,8 @@ export const EXPERIENCES: Experience[] = [
         title: '디자인 시스템 구축',
         descriptions: [
           '위버 브랜드 컨셉 및 사이트 특징에 맞는 디자인 시스템에 따라 필요 컴포넌트 개발',
-          '높은 재사용성과 동적이고 유연한 컴포넌트를 만들기 위해 styled-components를 활용',
-          'story-book을 이용하여 컴포넌트 UI 테스트 및 prop 명세 문서화',
+          '높은 재사용성과 동적이고 유연한 컴포넌트를 만들기 위해 `styled-components`를 활용',
+          '`story-book`을 이용하여 컴포넌트 UI 테스트 및 prop 명세 문서화',
           '디자이너와 함께 size, variant, fillType 등 컴포넌트 별 공통, 개별 prop 사용 규칙 정립',
         ],
       },
@@ -45,15 +45,15 @@ export const EXPERIENCES: Experience[] = [
         title: '위버 서비스 런칭 & 관리자 사이트 개발, 배포',
         descriptions: [
           '빠른 런칭 및 높은 리소스 재사용을 위한 모노레포 방식으로 프로젝트 구성',
-          'formik, yup을 활용한 효율적인 validation 및 form 상태 관리',
+          '`formik`, `yup`을 활용한 효율적인 validation 및 form 상태 관리',
           '관리자, 판매자에 따라 컴포너트 내부 분기처리 로직 및 form 스키마 및 validation 구분',
-          'react-query와 zustand를 활용한 서버 및 클라이언트 상태 관리 효율화',
+          '`react-query`와 `zustand`를 활용한 서버 및 클라이언트 상태 관리 효율화',
         ],
       },
       {
         title: '위버 모바일 UI 최적화 작업',
         descriptions: [
-          'CSS Media Query 및 customHook을 이용한 모바일 UI 작업',
+          '`CSS Media Query` 및 `customHook`을 이용한 모바일 UI 작업',
           '모바일 컴포넌트 사용 규칙 디테일 강화',
           '크로스 브라우징, 디바이스 별 OS 및 모든 브라우저 호환 작업',
           'DX 고려하여 모바일용 컴포넌트와 범용 컴포넌트간 구분 컨벤션 정립',
@@ -62,7 +62,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: '구매자 회원가입 및 채팅을 통한 자율 거래',
         descriptions: [
-          'socket.io를 이용한 채팅 기능 개발',
+          '`socket.io`를 이용한 채팅 기능 개발',
           '커머스 기능 개발 (토스페이먼츠 연동)',
           '워크샵 상품 예약, 주문 기능 개발',
         ],
@@ -71,7 +71,7 @@ export const EXPERIENCES: Experience[] = [
         title: '상품 상세 페이지 PDF 다운로드 제공',
         descriptions: [
           'B2B 서비스에서 상위부서에 보고하기위한 용도의 예약정보 다운로드 기능 제공',
-          'react-pdf를 이용하여 워크샵 상품 상세 페이지 내용 pdf 다운로드 있는 기능 개발',
+          '`react-pdf`를 이용하여 워크샵 상품 상세 페이지 내용 pdf 다운로드 있는 기능 개발',
           '기존 외주 디자이너 수기 작업 완전 대체',
         ],
       },
@@ -97,9 +97,9 @@ export const EXPERIENCES: Experience[] = [
         information:
           '상담사 및 코치들이 웹을 통하여 고객과 음성통화 및 채팅할 수 있는 웹 어플리케이션',
         descriptions: [
-          '별도의 디자인 시안없이 vuetify를 통한 기본 템플릿 제작',
-          'vue, vuetify 를 활용하여 기존 레거시 사이트 리뉴얼',
-          'CSS Media Query를 이용한 반응형 디자인으로 제작',
+          '별도의 디자인 시안없이 `vuetify`를 통한 기본 템플릿 제작',
+          '`vue`, `vuetify` 를 활용하여 기존 레거시 사이트 리뉴얼',
+          '`CSS Media Query`를 이용한 반응형 디자인으로 제작',
           '배포, 및 지속적인 기능 개발 및 리팩토링',
           '유지보수, 성능 최적화',
         ],
@@ -116,7 +116,7 @@ export const EXPERIENCES: Experience[] = [
         title: '통화, 채팅 품질 개선 TF팀 참여',
         descriptions: [
           '제품팀장, 개발팀장, 전문가 페이지 담당자, 안드로이드 개발자1, iOS개발자1 참여',
-          '브라우저 MediaDevices API를 통한 마이크, 카메라 사용권한 획득 및 관렴 UX 작업',
+          '브라우저 `MediaDevices API`를 통한 마이크, 카메라 사용권한 획득 및 관렴 UX 작업',
           '전문가(상담사 및 코치)가 사용자의 마이크 권한, 데이터 연결방식(와이파이, 셀룰러 데이터) 확인 가능 기능 추가',
           '네트워크 지역 이탈 및 신호 약함 등으로 통화 종료시 예외처리 및 UX 개발',
           '마인드카페 보이스테라피 상품 통화 성공율 72%에서 99%까지 상승',
@@ -133,9 +133,10 @@ export const EXPERIENCES: Experience[] = [
       {
         title: '마인드카페 RESTfull api 작업 참여',
         descriptions: [
-          'python3, flask를 이용한 api 서버 운영',
-          'mySQL, SQLAlchemy를 이용한 데이터베이스 관리',
-          '후기, 사용자 정보, 게시물 등 DB 스키마 관리 및 관련엔드포인트 작성',
+          '`python3`, `flask`를 이용한 api 서버 운영',
+          '`mySQL`, SQLAlchemy를 이용한 데이터베이스 관리',
+          '후기, 사용자 정보, 게시물 등 DB 스키마 관리 및 관련 엔드포인트 작성',
+          '`Docker` 컨테이너를 이용한 개발자 개인별 api 서버 개발 환경',
         ],
       },
     ],
@@ -157,9 +158,9 @@ export const EXPERIENCES: Experience[] = [
       {
         title: '부크크 레거시 서비스 페이지 리뉴얼',
         descriptions: [
-          'WYSIWYG 기반 커뮤니티 게시판 기능 구현',
-          'CSS Media Query를 이용한 반응형 디자인',
-          '책 만들기 기능',
+          '`WYSIWYG` 기반 커뮤니티 게시판 기능 구현',
+          '`CSS Media Query`를 이용한 반응형 디자인',
+          '책 만들기 기능 페이지 개발',
           '작가 서비스(도서 표지 디자인 및 교정 서비스 판매) 페이지 개발',
           '마이페이지 개발, 프로필 및 개인정보 변경, 내 서재 꾸미기 기능 개발',
           '도서 및 작가서비스 구매를 위한 커머스 기능 개발 (부트페이 연동)',
@@ -176,13 +177,13 @@ export const EXPERIENCES: Experience[] = [
       {
         title: '부크크 RESTfull api 작업 및 파일 서버 개발 참여',
         descriptions: [
-          'mongoDB, mongoose를 이용한 데이터베이스 관리',
+          '`mongoDB`, `mongoose`를 이용한 데이터베이스 관리',
           '사용자 계정 정보 DB 스키마 관리 및 관련엔드포인트 작성',
           '게시판, 게시물, 댓글 DB 스키마 관리 및 관련 엔드포인트 작성',
           '도서상품 및 작가서비스 상품 DB 스키마 관리 및 관련 엔드포인트 작성',
-          '부크크 서비스 운영, 도서 상품 심사에 필요한 DB스키마 관리 및 엔드 포인트 작성',
-          'JWT, passport를 이용한 중요 정보 암호화 관리 및 엔드포인트별 권한 관리',
-          'multer, sharp를 이용한 파일 관리 및 이미지 리사이징 처리',
+          '부크크 서비스 운영, 도서 상품 심사에 필요한 DB 스키마 관리 및 엔드 포인트 작성',
+          '`JWT`, `passport`를 이용한 중요 정보 암호화 관리 및 엔드포인트별 권한 관리',
+          '`multer`, `sharp`를 이용한 파일 관리 및 이미지 리사이징 처리',
         ],
       },
     ],

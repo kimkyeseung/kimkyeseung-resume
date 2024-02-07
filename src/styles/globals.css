@@ -11,6 +11,7 @@
 ul {
   padding-left: 24px;
 }
+
 ul li::before {
   content: '\2022';
   color: rgb(59 130 246);
@@ -20,16 +21,28 @@ ul li::before {
   margin-left: -1em;
 }
 
+code {
+  background: theme('colors.gray.100');
+  color: theme('colors.indigo.700');
+  border: 1px solid theme('colors.gray.200');
+  padding: 0.15em 0.3em;
+  font-size: 85%;
+  border-radius: 3px;
+  margin-right: 0.1em;
+}
+
 .simple-icon {
   width: 30px;
   height: 30px;
 }
+
 @screen sm {
   .simple-icon {
     width: 30px;
     height: 30px;
   }
 }
+
 @screen md {
   .simple-icon {
     width: 55px;
