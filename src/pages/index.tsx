@@ -1,10 +1,13 @@
 import { Inter } from 'next/font/google'
 import { Aside, Contents } from '@/components'
 import { useReactToPrint } from 'react-to-print'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { DOCUMENT_TITLE } from '@/constants'
+import axios from 'axios'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const apiUrl: string = process.env.NEXT_PUBLIC_API_URL as string
 
 export default function Home() {
   const ref = useRef<HTMLDivElement>(null)
@@ -14,6 +17,22 @@ export default function Home() {
     documentTitle: DOCUMENT_TITLE,
     removeAfterPrint: true,
   })
+
+  useEffect(() => {
+    async function fetchData() {
+      console.log(`${apiUrl}/test`)
+      try {
+        const data = await axios.get(`${apiUrl}/test`)
+        // const data = await fetch(`${apiUrl}/test`, {
+        //   credentials: 'omit',
+        // })
+        console.log(data)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    fetchData()
+  }, [])
 
   return (
     <main
