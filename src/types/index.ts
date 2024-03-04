@@ -37,3 +37,8 @@ export interface Skill {
   description?: string
   url?: string
 }
+
+export interface Summary {
+  title: string
+  description: string
+}
