@@ -157,12 +157,6 @@ const devOps = [
     description:
       'WebRTC는 브라우저 간에 플러그인 없이 실시간 음성, 영상 통신 및 데이터 공유를 가능케 하는 오픈 소스 프로젝트이며, 웹 및 모바일 애플리케이션에서 활용됩니다.',
   },
-  {
-    name: 'Nx',
-    Icon: <SiNx color="default" className="simple-icon" />,
-    description:
-      'Nx는 monorepo에서 다수의 프로젝트를 관리하고 통합하여 공통된 코드베이스를 유지보수하는 데 도움이 되는 오픈 소스 도구입니다.',
-  },
 ]
 
 export const skillSets = {
